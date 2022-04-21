@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+}
+main {
+  flex: 1 1 auto;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.title,
+.ul {
+  margin-top: 0;
+}
+
+.head {
+  background-color: #ff7f50;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.headName {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.footer {
+  background-color: #ff7f50;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.inputMain {
+  padding: 5px;
+  border: 2px solid #ff7f50;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #ff7f50;
+  padding: 6px;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.with-gap {
+  margin: 15px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.ul {
+  max-width: 500px;
+  text-align: start;
+}
+
+.ul li {
+  list-style: none;
 }
